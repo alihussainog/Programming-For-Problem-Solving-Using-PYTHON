@@ -1,7 +1,7 @@
 # -------------------------------------------------------------
 # Project Title : Daily Calorie Tracker CLI
-# Author        : [Your Name]
-# Date          : [Enter Date]
+# Author        : [Ali Hussain]
+# Date          : [11/11/2025]
 # Description   : A Python CLI tool to track daily calorie intake,
 #                 compare it with a user-defined limit,
 #                 and optionally save the session summary to a file.
@@ -37,9 +37,9 @@ daily_limit = float(input("Enter your daily calorie limit: "))
 
 # Compare with daily limit
 if total_calories > daily_limit:
-    limit_status = "⚠ Warning: You have exceeded your daily calorie limit!"
+    limit_status = " Warning: You have exceeded your daily calorie limit!"
 else:
-    limit_status = "✅ Great! You are within your daily calorie limit."
+    limit_status = " Great! You are within your daily calorie limit."
 
 # Task 5: Neatly Formatted Output
 print("\n==========================================")
@@ -79,7 +79,7 @@ if save_option == 'y':
         file.write(limit_status + "\n")
         file.write("==========================================\n\n")
 
-    print(f"\n✅ Session successfully saved to '{filename}'!\n")
+    print(f"\n Session successfully saved to '{filename}'!\n")
 else:
     print("\nSession not saved. Goodbye!\n")
 
